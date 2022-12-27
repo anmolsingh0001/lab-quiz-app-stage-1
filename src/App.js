@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Quizzapp from './components/quizzapp';
+import Quizzapp2 from './components/quizzapp2';
+import Qquizzapp3 from './components/qquizzapp3';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='front'>
+      <Quizzapp/>
+      </div>
+      <div className='mid'>
+      <Quizzapp2/>
+      </div>
+      <div className='end'>
+      <Qquizzapp3/>
+      </div>
     </div>
   );
 }
